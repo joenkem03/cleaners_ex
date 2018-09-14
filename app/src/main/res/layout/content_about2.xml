@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".About2Activity"
+    tools:showIn="@layout/activity_about2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fullHomeBasicCleaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:ems="10"
+                android:inputType="text"
+                android:text="@string/fullHomeBasicCleaning"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="139dp" />
+
+            <TextView
+                android:id="@+id/fullHomeBasicCleaningTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom|left|right|fill_vertical|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:gravity="top|bottom|left|right|fill_vertical|fill_horizontal|center|fill|start|end"
+                android:inputType=""
+                android:text="@string/fullHomeBasicCleaningTxt"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/fullHomeProclean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:inputType="text"
+                android:text="@string/fullHomeProclean"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fullHomeProcleanTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom|left|right|fill_vertical|fill_horizontal|center|fill|start|end"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:gravity="top|bottom|left|right|fill_vertical|fill_horizontal|center|fill|start|end"
+                android:inputType=""
+                android:text="@string/fullHomeProcleanTxt"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+
+                <!--<ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="prevtAbt"
+                    app:srcCompat="@android:drawable/ic_media_previous" />-->
+
+                <TextView
+                    android:id="@+id/prvAbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:onClick="prevtAbt"
+                    android:text="@string/prvAbt"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:text="@string/blank"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+                <!--<ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="nextAbt"
+                    app:srcCompat="@android:drawable/ic_media_next" />-->
+
+                <TextView
+                    android:id="@+id/nxtAbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:onClick="nextAbt"
+                    android:text="@string/nxtAbt"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

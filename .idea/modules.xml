@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cleaners.iml" filepath="$PROJECT_DIR$/.idea/Cleaners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-async-http-1.4.9x/android-async-http-1.4.9x.iml" filepath="$PROJECT_DIR$/android-async-http-1.4.9x/android-async-http-1.4.9x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

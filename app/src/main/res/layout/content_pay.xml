@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PayActivity"
+    tools:showIn="@layout/activity_pay">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_custom_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:minHeight="150dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/card_number"
+                        android:inputType="phone"
+                        android:minEms="8"
+                        android:text="" />
+
+                    <EditText
+                        android:id="@+id/edit_cvc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/cvv"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:minEms="4"
+                        android:text="" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:id="@+id/edit_expiry_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_card_num"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_toLeftOf="@id/divider_horizontal"
+                    android:layout_toStartOf="@id/divider_horizontal"
+                    android:gravity="right"
+                    android:hint="@string/mm"
+                    android:inputType="number"
+                    android:maxEms="3"
+                    android:maxLength="2"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/edit_expiry_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_card_num"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_toEndOf="@id/divider_horizontal"
+                    android:layout_toRightOf="@id/divider_horizontal"
+                    android:hint="@string/yyyy"
+                    android:inputType="number"
+                    android:maxEms="4"
+                    android:maxLength="4"
+                    android:text="" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/edit_pin"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:padding="8dp"-->
+                <!--android:maxEms="4"-->
+                <!--android:maxLength="4"-->
+                <!--android:text=""/>-->
+                <Button
+                    android:id="@+id/button_perform_local_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_expiry_year"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:padding="8dp"
+                    android:text="Charge card" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/layout_transaction_response"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/layout_custom_form"-->
+            <!--android:background="#1C3A4B"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:minHeight="70dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textview_reference"-->
+            <!--style="@style/TextAppearance.AppCompat.Title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+            <!--android:padding="8dp"-->
+            <!--android:text="@string/no_transaction_yet"-->
+            <!--android:textColor="#ffffff"/>-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/layout_token_response"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/layout_transaction_response"-->
+            <!--android:background="#1C3A4B"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:minHeight="70dp"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textview_error"-->
+            <!--style="@style/TextAppearance.AppCompat.Title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+            <!--android:padding="8dp"-->
+            <!--android:text=" "-->
+            <!--android:textColor="#ffffff"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textview_backend_message"-->
+            <!--style="@style/TextAppearance.AppCompat.Title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/textview_error"-->
+            <!--android:layout_margin="@dimen/activity_vertical_margin"-->
+            <!--android:padding="8dp"-->
+            <!--android:text=" "-->
+            <!--android:textColor="#ffffff"/>-->
+
+            <!--</RelativeLayout>-->
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

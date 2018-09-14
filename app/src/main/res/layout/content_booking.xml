@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.cleaners.BookingActivity"
+    tools:showIn="@layout/activity_booking">
+
+
+
+    <!--<TableLayout-->
+        <!--android:id="@+id/tableLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_span="3"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/linLay"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bookingStatus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/bookingStatus" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/propertyLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/propertyLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/propertyName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/propertyName"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/propertyTypeLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/propertyTypeLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/propertyType"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/propertyType"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/addressLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/addressLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/addressName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/addressName"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/scheduleLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/scheduleLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/scheduleName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/scheduleName"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/amountLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/amountLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/amountName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/amountName"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bookIdLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/bookIdLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bookIdName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/bookIdName"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/contactLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/contactLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/contactName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/contactName"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/phoneLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginRight="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:text="@string/phoneLabel"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/phoneNo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/fab_margin"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_marginTop="@dimen/fab_margin"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/phoneNo"-->
+                <!--tools:layout_editor_absoluteX="123dp"-->
+                <!--tools:layout_editor_absoluteY="100dp" />-->
+        <!--</TableRow>-->
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/payAdvise"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/fab_margin"-->
+                <!--android:layout_span="3"-->
+                <!--android:text="@string/payAdvise" />-->
+        <!--</TableRow>-->
+
+        <!--&lt;!&ndash;<TableRow&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_horizontal">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/chopSpace1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="@dimen/fab_margin"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/chopSpace" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/confirmButton"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="@dimen/fab_margin"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/okButton" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/chopSpace2"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="@dimen/fab_margin"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="@dimen/fab_margin"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/chopSpace" />&ndash;&gt;-->
+        <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+    <!--</TableLayout>-->
+
+    <LinearLayout
+        android:id="@+id/linLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/bookingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_span="2"
+            android:text="@string/bookingStatus" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/propertyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/propertyLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/propertyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/propertyName"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/propertyTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/propertyTypeLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/propertyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/propertyType"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/addressLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/addressName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/addressName"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scheduleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/scheduleLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/scheduleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/scheduleName"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/amountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/amountLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/amountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/amountName"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bookIdLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/bookIdLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/bookIdName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/bookIdName"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contactLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/contactLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/contactName"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="@string/phoneLabel"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="100dp" />
+
+            <TextView
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_span="2"
+                android:text="@string/phoneNo"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="100dp"
+                android:textAlignment="textStart"
+                android:gravity="start"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/payAdvise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_span="3"
+                android:text="@string/payAdvise" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/confirmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:text="@string/okButton" />
+
+            <!--<Button-->
+                <!--android:id="@+id/exitButton"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/exitButton" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

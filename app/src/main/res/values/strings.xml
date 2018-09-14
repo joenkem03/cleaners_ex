@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">CleanHouse</string>
+    <string name="cleanButton">Cleaning Service</string>
+    <string name="sendButton">Send</string>
+    <string name="title_activity_clean">Cleaning Service</string>
+    <string name="title_activity_pest">Pest Control</string>
+    <string name="facilitySize">Size/Measurement (Number)</string>
+    <string name="pestRB">Pest Control Service</string>
+    <string name="cleanRB">Cleaning Service</string>
+    <string name="selectfacility">Select Facility</string>
+    <string name="title_activity_booking">Booking Status</string>
+    <string name="confirmButton">Confirm</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="facilityname">Facility Name</string>
+    <string name="facilityaddress">Location Of Facility (Full Address)</string>
+    <string name="contactname">Your Name</string>
+    <string name="phone">Phone</string>
+    <string name="emailaddress">Email</string>
+    <string name="date">Schedule A Date For This Service</string>
+    <string name="date_selected"></string>
+    <string name="bookingStatus"></string>
+    <string name="propertyLabel">Property:\t</string>
+    <string name="propertyName"></string>
+    <string name="addressLabel">Address:\t</string>
+    <string name="addressName"></string>
+    <string name="propertyTypeLabel">Property Type:\t</string>
+    <string name="propertyType"></string>
+    <string name="scheduleLabel">Scheduled Date:\t</string>
+    <string name="scheduleName"></string>
+    <string name="amountLabel">Amount:\t</string>
+    <string name="amountName"></string>
+    <string name="bookIdLabel">Booking ID:\t</string>
+    <string name="bookIdName"></string>
+    <string name="contactLabel">Contact Person:\t</string>
+    <string name="contactName"></string>
+    <string name="phoneLabel">Phone:\t</string>
+    <string name="phoneNo"></string>
+    <string name="payAdvise"></string>
+    <string name="okButton">Pay Now</string>
+    <string name="exitButton">Exit</string>
+    <string name="selectServiceProvider">Select Service Provider</string>
+    <string name="testText"></string>
+    <string name="chopSpace">    </string>
+    <string name="homeText">Please select what facility you would have us service.</string>
+    <string name="splash_msg">Welcome</string>
+    <string name="todo">TODO</string>
+    <string-array name="facilities_array">
+        <item>Home</item>
+        <item>Office</item>
+    </string-array>
+    <string-array name="units_array">
+        <item>Rooms/Office</item>
+        <item>Square Meters (sqm)</item>
+    </string-array>
+    <string-array name="cleanType_array">
+        <item>Basic Cleaning</item>
+        <item>Deep Cleaning</item>
+        <item>Professional Cleaning</item>
+    </string-array>
+    <string-array name="services_array">
+        <item>We Pest Control Ltd. - 7500xxxxxxxxxxxxxxxxx</item>
+        <item>My Pest Busters - 15000 </item>
+        <item>Show Stopers Pest Control - 10000</item>
+        <item>Pest Out Pests Coorp. - 13000</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="selectCleanType">Select Cleaning Type</string>
+    <string name="selectunit">Unit of Measure</string>
+    <string name="title_activity_aboutctivity">About</string>Full Home Deep clean:
+    <string name="homeCleaning">Home Cleaning</string>
+    <string name="homeCleaningTxt">Cleaning of the house including all rooms, bathrooms, kitchen. Vacuum cleaning of sofas, carpets, curtains and mattresses Scrubbing of flooring, tiles, using suitable machinery. Dusting and cleaning of windows, railings, fans, lights and cabinets. Professional equipment includes single disc machine, vacuum cleaner, ladder and duster.  Does not include: Cleaning of utensils, Walls and ceiling washing, Polishing of wooden furniture and flooring</string>
+    <string name="fullHomeDeepclean">Full Home Deep clean:</string>
+    <string name="fullHomeDeepcleanTxt">Deep cleaning of bathroom, kitchen, living room, dining room, bedroom and balcony cleaning. Deep cleaning of external surfaces, cabinets and appliance exteriors and removal of grease and oil stains. Deep cleaning of floor, WC seat, sink fittings and walls. Cleaning of doors, cupboards, handles and wardrope exteriors. Cleaning of fans, lights, cabinets, underneath bed. Dry vacuming of sofa, curtain and carpets using professional grade cleaning solutions, cleaning equipment and vacuum cleaners by professional cleaning staff. Equipment used: Single Disk Machine, Steam Machine, Vaccum Cleaner, Scotch Brite Scrubber, Small Wipers, Bucket, Mugs, Toilet Brush, Disposable Bags Hard Cloth Duster, Microfiber Duster </string>
+    <string name="title_activity_about2">About</string>
+    <string name="fullHomeBasicCleaning">Full Home Basic clean:</string>
+    <string name="fullHomeBasicCleaningTxt">Includes cleaning bathroom, kitchen, living room, dining room, bedroom. Dry vacuuming of sofa, curtain and carpets using professional grade cleaning solutions, cleaning equipment and vacuum cleaners.  Equipment used Vaccum Cleaner, Scotch Brite Scrubber, Small Wipers, Bucket, Mugs, Toilet Brush, Disposable Bags Hard Cloth Duster, Microfiber Duster</string>
+    <string name="fullHomeProclean">Full Home professional clean :</string>
+    <string name="fullHomeProcleanTxt">Professional cleaning includes bathroom, kitchen, living room, dining room, bedroom and balcony cleaning. Deep cleaning of external surfaces, cabinets and appliance exteriors and removal of grease and oil stains. Deep cleaning of floor, WC seat, sink fittings and walls. Cleaning of doors, cupboards, handles and wardrope exteriors. Cleaning of fans, lights, cabinets. Post construction and post renovation cleaning, stain removal (Paint), floor scrubbing and floor polishing.  Dry vacuming of sofa, curtain and carpets using professional grade cleaning solutions, cleaning equipment and vacuum cleaners by professional cleaning staff. Equipment used Single Disk Machine, Steam Machine, Vaccum Cleaner, Scotch Brite Scrubber, Small Wipers, Bucket, Mugs, Toilet Brush, Disposable Bags Hard Cloth Duster, Microfiber Duster</string>
+    <string name="skipAbt">skip</string>
+    <string name="nxtAbt">next</string>
+    <string name="prvAbt">previous</string>
+    <string name="blank"> </string>
+    <string name="title_activity_pay">Pay with Card</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="card_number">Card number</string>
+    <string name="cvv">CVV</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="create_token">Create token</string>
+    <string name="no_card_yet">No card yet</string>
+    <string name="no_token">No token</string>
+    <string name="token_null_message">Token was null</string>
+    <string name="token_not_gotten">Unable to get token</string>
+    <string name="sample_card">4123450131001381</string>
+    <string name="sample_cvv">883</string>
+    <string name="sample_month">01</string>
+    <string name="sample_year">2020</string>
+    <string name="no_transaction_yet">No transaction yet</string>
+    <string name="amount_in_kobo">Amount in Kobo</string>
+
+</resources>
